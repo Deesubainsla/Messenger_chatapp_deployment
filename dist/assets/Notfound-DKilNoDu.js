@@ -1,1 +1,0 @@
-import{j as e}from"./index-CeTxdQf5.js";function n(){return e.jsx(e.Fragment,{children:e.jsx("div",{className:"h-screen flex justify-center items-center",children:e.jsx("h1",{className:"text-4xl",children:"404 Page not Found"})})})}export{n as default};
