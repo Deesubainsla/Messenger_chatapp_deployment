@@ -1,1 +1,0 @@
-import{j as r}from"./index-tkMLmEcT.js";import{L as o}from"./Layout-Cigmp-0L.js";import"./createSvgIcon-Cew3nPom.js";function t(){return r.jsx("div",{children:"Groups"})}const e=o(t);export{e as default};
