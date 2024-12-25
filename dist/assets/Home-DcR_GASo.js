@@ -1,1 +1,0 @@
-import{j as e}from"./index-DXofStCc.js";import{L as t}from"./Layout-DTgVQxxG.js";import"./createSvgIcon-BFksW1B8.js";function r(){return e.jsx(e.Fragment,{children:e.jsx("div",{className:"h-full flex justify-center items-center",children:e.jsx("h1",{className:"font-bold text-4xl",children:"Select a friend to Chat:"})})})}const a=t(r);export{a as default};
