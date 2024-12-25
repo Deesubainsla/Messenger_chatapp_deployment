@@ -161,8 +161,11 @@ const getalluser = wrapper(async(req,res)=>{
 
     const chats = await Chat.find({members: userid}).select("members");
 
-    let friendsarray = [userid];
+    let friendsarray;
     friendsarray = chats.flatMap(({members})=>members.filter((id)=> id.toString() != userid.toString()))
+
+    friendsarray = [...friendsarray, userid];
+    //in first case it was reclare the array only with flatMap.So, need ot append userid at end.
 
 
     const users = await User.find({_id:{$nin:friendsarray}});

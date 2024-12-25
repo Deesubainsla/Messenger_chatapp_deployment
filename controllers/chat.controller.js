@@ -52,7 +52,7 @@ const getchat = wrapper(async(req, res, next) =>{
     // 1 means in asscending order
 
 
-    const transformdata = chats.map(({_id, groupchat, name,members,latestmsg}) => {
+    const transformdata = chats.map(({_id, groupchat,name,members,latestmsg}) => {
         //understand {} as a block of clode not destructring without () in parameter of map
 
         //to access other members.
@@ -66,11 +66,11 @@ const getchat = wrapper(async(req, res, next) =>{
 
             groupchat,
 
-            name: groupchat? name: othermembers[0].name,
+            name: groupchat? name : othermembers[0]?.name,
 
             avatar: groupchat? members.slice(0,3).map(member =>{
                 return member.avatar.url;
-            })  : [othermembers[0].avatar.url],
+            })  : [othermembers[0]?.avatar.url],
 
 
             //.reduce implementation:
